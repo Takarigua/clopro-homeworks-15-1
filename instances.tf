@@ -10,8 +10,8 @@ resource "yandex_compute_instance" "nat" {
 
   boot_disk {
     initialize_params {
-      image_id = "fd80mrhj8fl2oe87o4e1" # NAT-образ
-      size     = 8                       # минимальный допустимый размер диска
+      image_id = "fd80mrhj8fl2oe87o4e1"
+      size     = 8
     }
   }
 
@@ -38,7 +38,7 @@ resource "yandex_compute_instance" "public_vm" {
 
   boot_disk {
     initialize_params {
-      image_id = "fd887k3tohr44p393noh" # Ubuntu 22.04
+      image_id = "fd887k3tohr44p393noh"
       size     = 8
     }
   }
@@ -65,7 +65,7 @@ resource "yandex_compute_instance" "private_vm" {
 
   boot_disk {
     initialize_params {
-      image_id = "fd887k3tohr44p393noh" # Ubuntu 22.04
+      image_id = "fd887k3tohr44p393noh"
       size     = 8
     }
   }
